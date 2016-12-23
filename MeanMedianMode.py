@@ -44,13 +44,15 @@ for x in a:
     v.append(c)
 
 #rint v
+d=[]
 if max(v) == 1:
     mode = min(a)
  
 else:
     for i in xrange(len(v)):
         if v[i] == max(v):
-            mode = a[i]
+            d.append(a[i])
+            mode = min(d)
             
             
 print mode  
